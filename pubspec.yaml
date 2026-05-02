@@ -19,4 +19,8 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   assets:
-    - assets/images/
+    - assets/images/logo.png
+    - assets/images/banner_bg.png
+    - assets/images/red_hijab.png
+    - assets/images/white_hijab.png
+    - assets/images/mix_hijab.png
