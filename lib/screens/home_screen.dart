@@ -18,7 +18,7 @@ class HomeScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const MainBanner(),
-            const SizedBox(height: 30),
+            const SizedBox(height: 25),
             Center(
               child: Column(
                 children: [
@@ -26,32 +26,33 @@ class HomeScreen extends StatelessWidget {
                     'الأكثر مبيعاً',
                     style: TextStyle(
                       color: AppColors.primaryRed,
-                      fontSize: 18,
+                      fontSize: 20,
                       fontWeight: FontWeight.bold,
+                      fontFamily: 'Amiri',
                     ),
                   ),
+                  const SizedBox(height: 4),
                   Container(
-                    height: 2,
-                    width: 40,
+                    height: 1.5,
+                    width: 35,
                     color: AppColors.primaryRed,
-                    margin: const EdgeInsets.only(top: 4),
                   ),
                 ],
               ),
             ),
             const SizedBox(height: 20),
             SizedBox(
-              height: 220,
+              height: 240,
               child: ListView.builder(
                 scrollDirection: Axis.horizontal,
-                padding: const EdgeInsets.symmetric(horizontal: 12),
+                padding: const EdgeInsets.symmetric(horizontal: 10),
                 itemCount: demoProducts.length,
                 itemBuilder: (context, index) {
                   return ProductCard(product: demoProducts[index]);
                 },
               ),
             ),
-            const SizedBox(height: 40),
+            const SizedBox(height: 30),
           ],
         ),
       ),
